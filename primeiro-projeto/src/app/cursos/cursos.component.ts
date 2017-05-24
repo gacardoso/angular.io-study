@@ -1,3 +1,4 @@
+import { CursosService } from './cursos.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,16 +10,28 @@ export class CursosComponent implements OnInit {
 
   nomePortal: string;
 
-  cursos: string[] = ['C#', 'Nodejs', 'Angular']
+  cursos: string[];
 
   //pode usar nomePortal: any;
 
-  constructor() {
+  // constructor(private cursosService: CursosService) 
+  // constructor(public cursosService: CursosService)
+
+  //cursosService: CursosService
+
+  constructor(private cursosService: CursosService) {
+
     this.nomePortal = 'https://google.com';
 
-    for (var i = 0; i < this.cursos.length; i++) {
-      var curso = this.cursos[i];
-    }
+    // for (var i = 0; i < this.cursos.length; i++) {
+    //   var curso = this.cursos[i];
+    // }
+
+    //var servico = new CursosService();
+
+    //this.cursosService = cursosService;
+
+    this.cursos = this.cursosService.getCursos();
 
   }
 
