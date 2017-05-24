@@ -1,5 +1,7 @@
 import {Component} from '@angular/core'
 
+// até 3 linhas angular guide
+
 @Component({
     selector: 'meu-primeiro-component',
     template: `
