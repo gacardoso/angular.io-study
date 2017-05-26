@@ -1,4 +1,4 @@
-<section class="property-binding">
+<!--<section class="property-binding">-->
 
 
   <!--<article>
@@ -20,7 +20,7 @@
     <img bind-src="urlImagem" >
   </article>-->
 
-  <article>
+  <!--<article>
     <h3>Class e Style Binding</h3>
     <div>
       Selecione uma classe:
@@ -47,7 +47,7 @@
       </div>
       <div class="alert " role="alert" [class.alert-danger]="classe.value == 'alert-danger'">
         <strong>Oh snap!</strong> Change a few things up and try submitting again.
-      </div>
+      </div>-->
 
       <!--<div class="alert alert-danger" role="alert" style="display:block">
         Esse texto somente aparece em caso de erro.
@@ -57,10 +57,47 @@
         Esse texto somente aparece em caso de erro.
       </div>-->
 
-      <div class="alert alert-danger" role="alert" [style.display]="classe.value == 'alert-danger' ? 'block' : 'none' ">
+      <!--<div class="alert alert-danger" role="alert" [style.display]="classe.value == 'alert-danger' ? 'block' : 'none' ">
         Esse texto somente aparece em caso de erro.
       </div>
 
+    </div>
+  </article>
+</section>-->
+
+<section> 
+  <article> 
+    <h3>Event binding</h3>
+    <div>
+
+      <button (click)="botaoClicado()" class="btn btn-primary">Me clique!</button>
+
+      <!--<button on-click="botaoClicado()" class="btn btn-primary">Me clique!</button>-->
+
+
+      <br><br>
+
+      <!--<input type="text" 
+      (keyup)="onKeyUp($event)" 
+      (keyUp.enter)="salvarValor($event.target.value)"
+      (blur)="salvarValor($event.target.value)"/>   -->
+
+      <input type="text" 
+      (keyup)="onKeyUp($event)" 
+      (keyUp.enter)="salvarValor(campoInput.value)"
+      (blur)="salvarValor(campoInput.value)"
+      #campoInput />   
+
+      <p>Valor atual: {{ valorAtual }}</p>
+      <p>Valor salvo: {{ valorSalvo }}</p>
+
+      <br>
+      <span
+      (mouseover)="onMouseOverOut()"
+      (mouseout)="onMouseOverOut()"
+      [class.highlight] = "isMouseOver"
+      >Passe o mouse sobre mim</span>
+      
     </div>
   </article>
 </section>
