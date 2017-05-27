@@ -65,24 +65,24 @@
   </article>
 </section>-->
 
-<section> 
+<!--<section> 
   <article> 
     <h3>Event binding</h3>
     <div>
 
-      <button (click)="botaoClicado()" class="btn btn-primary">Me clique!</button>
+      <button (click)="botaoClicado()" class="btn btn-primary">Me clique!</button>-->
 
       <!--<button on-click="botaoClicado()" class="btn btn-primary">Me clique!</button>-->
 
 
-      <br><br>
+      <!--<br><br>-->
 
       <!--<input type="text" 
       (keyup)="onKeyUp($event)" 
       (keyUp.enter)="salvarValor($event.target.value)"
       (blur)="salvarValor($event.target.value)"/>   -->
 
-      <input type="text" 
+      <!--<input type="text" 
       (keyup)="onKeyUp($event)" 
       (keyUp.enter)="salvarValor(campoInput.value)"
       (blur)="salvarValor(campoInput.value)"
@@ -99,5 +99,44 @@
       >Passe o mouse sobre mim</span>
       
     </div>
+  </article>
+</section>-->
+
+
+<section>
+  <article>
+    <h3>Two-way data binding</h3>
+    <div>
+      
+      <input type="text" 
+      [value]="nome"
+      (input)="nome =$event.target.value"
+      />
+
+      <input type="text" 
+        [ngModel]="nome"
+        (ngModelChange)="nome =$event"
+      />
+
+      <!--melhor-->
+      <input type="text" [(ngModel)]="nome">
+      <input type="text" bindon-ngModel="nome">
+
+      <p>Você digitou: {{ nome }}</p>
+
+    </div>
+
+
+    <div>
+
+      <p>Meu nome é {{pessoa.nome}} e tenho {{pessoa.idade}} anos de idade.</p>
+
+      <!--diretiva FormsModule-->
+      <input type="text" [(ngModel)]="pessoa.nome"/>
+      <input type="text" [(ngModel)]="pessoa.idade"/>
+      
+    </div>
+
+
   </article>
 </section>
