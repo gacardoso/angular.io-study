@@ -1,0 +1,134 @@
+https://help.gnome.org/users/gnome-help/stable/shell-keyboard-shortcuts.html.en
+
+https://github.com/loiane/curso-angular2
+
+angular 2 to 4
+
+add else
+
+template para ng-template
+
+ngFor com | e obsevable
+
+mudou Renderer para Renderer2  //pode quebara angular 5
+
+//ver negação com !
+
+///diretiva email para validar email
+
+
+
+Nglf e NgFor melhorado
+
+Validação para formularios
+
+Renderer (depreciado)
+
+Novo Módulo de animação (depreciado)
+
+TypeScript 2.1
+
+//angular cli
+
+Performace
+Mobile (PWA)(Experimental) experimental
+Eject (Webpack)
+
+intall webpack plugin novo
+
+
+https://cli.angular.io/
+
+
+npm install -g typescript
+
+sudo npm install -g typescript
+
+superconjunto
+
+ES6
+ES5
+
+npm install -g @angular/cli
+
+testar com
+ng -v
+
+
+//criar um projeto
+ng new primeiro-projeto
+
+
+aula 21 detalhes do projeto *****
+
+ng g c meu-primeiro2
+
+//site ts
+es6-features.org/
+
+medium.com
+
+
+//criar um modulo
+ng g m cursos
+
+//criar um componente 
+ng g c cursos 
+
+//plugin autoimport
+
+//
+ng g c cursos/curso-detalhe
+
+//services services ou s
+ng g s cursos/cursos
+
+
+//Plugins
+Angular-CLI
+
+Atom
+one Dark
+angular-2-typeScript-snippets
+atom-typescript
+linter
+file-icon
+pigments muito bom pra html
+
+
+//Code
+Atom One Dark Theme
+ionic 2 Commands
+
+
+
+///Property Binding e Interpolação
+Template Componente 
+
+{{valor}}
+[propriedade]="valor"
+
+(evento)="handler"
+
+
+ng new data-binding
+
+
+lorempixel.com
+
+lorempixel.com/400/200/nature
+
+
+npm install ngx-bootstrap bootstrap --save
+
+//grid
+http://www.c-sharpcorner.com/UploadFile/dev4634/using-ng-grid-in-angular-ui-pages/
+
+
+ng g c meu-form
+
+ng g m meu-form
+
+ng g c input-property
+
+https://babeljs.io/docs/usage/cli/
